@@ -16,6 +16,7 @@ function Projects(){
           description:
             "sistema web desenvolvido no 3º período do curso de análise e desenvolvimento de sistemas, onde ajuda o usuário a saber o horário do ônibus mais próximos a partir da sua geolocalização.",
           image: "sistema web desenvolvido no 3º período do curso de análise e desenvolvimento de sistemas, onde ajuda o usuário a saber o horário do ônibus mais próximos a partir da sua geolocalização.",
+          repolink: "https://github.com/ICEI-PUC-Minas-PSG-ADS-TI/TIAPLI-2023-2-CommuniBus",
         },
         {
           title: "lr burguer",
@@ -28,18 +29,21 @@ function Projects(){
           description:
             "api desenvolvida em c#",
           image: "",
+          repolink: "https://github.com/PSG-TADS/psg-tads-2024-1-back-bd-ledadoval",
         },
         {
           title: "plant buddy",
           description:
             "projeto elaborada para um usuário saiba todas as informações sobre o plantio das plantas",
           image: "",
+          repolink: "https://github.com/ICEI-PUC-Minas-PSG-ADS-TI/psg-ads-2024-2-p7-proj-tidai-t1-plant-buddy",
         },
         {
           title: "portal games",
           description:
             "portal de jogos desenvolvido no 1º período de ads, onde o intuito era elaborar uma página usando html, css e javascript e utilizar a api raw",
           image: "",
+          repolink: "https://github.com/ledadoval/DIW-Portal-de-Games",
         },
       ];
       
@@ -69,8 +73,8 @@ function Projects(){
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
+              <Button size="small" color="primary" onClick={() => window.open(card.repolink, "_blank")}>
+                repositorie
               </Button>
               <Button size="small" color="secondary">
                 Learn More

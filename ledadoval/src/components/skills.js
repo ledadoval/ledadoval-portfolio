@@ -11,6 +11,7 @@ function Skills(){
         <button>css</button>
         <button>javascript</button>
         <button>react</button>
+        <button>react native</button>
         <button>node js</button>
         <button>java</button>
         <button>c#</button>
