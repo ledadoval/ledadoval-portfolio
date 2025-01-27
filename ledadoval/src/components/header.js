@@ -14,7 +14,6 @@ function HeaderP() {
       {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -28,9 +27,9 @@ function HeaderP() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-5">
-                  <Nav.Link href="#action1">about me</Nav.Link>
-                  <Nav.Link href="#action1">projects</Nav.Link>
-                  <Nav.Link href="#action1">contact</Nav.Link>
+                  <Nav.Link href="#aboutme">about me</Nav.Link>
+                  <Nav.Link href="#projects">projects</Nav.Link>
+                  <Nav.Link href="#contact">contact</Nav.Link>
                   
                 </Nav>
               </Offcanvas.Body>
