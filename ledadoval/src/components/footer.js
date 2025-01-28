@@ -39,7 +39,7 @@ export default function Footerp() {
         
       </section>
 
-      <div className='text-center text-white p-4' style={{ backgroundColor: '#1E1B1B' }}>
+      <div className='text-center text-white p-4'>
         Copyright © 2025 -
         <a className='text-reset fw-bold' href='https://github.com/ledadoval'>
           Lêda do Val

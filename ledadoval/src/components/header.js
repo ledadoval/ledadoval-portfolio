@@ -11,6 +11,8 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 function HeaderP() {
   return (
     <>
+    <div className='headerNav'>
+
       {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
@@ -37,6 +39,7 @@ function HeaderP() {
           </Container>
         </Navbar>
       ))}
+      </div>
     </>
   );
 }

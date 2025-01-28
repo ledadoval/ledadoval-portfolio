@@ -1,12 +1,13 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import '../App.css';
 
 function Skills(){
     return(
-        <div>
-
+        <div className='skills-container'>
         <h2>my skills</h2>
         <h5>list of tools that I already use, or study on my projects</h5>
+        <div className='skills-buttons'>
         <button>html</button>
         <button>css</button>
         <button>javascript</button>
@@ -18,6 +19,7 @@ function Skills(){
         <button>mysql</button>
         <button>figma</button>
         <button>git</button>
+        </div>
         </div>
 
     );
