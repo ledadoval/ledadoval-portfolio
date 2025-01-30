@@ -4,7 +4,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 export default function Footerp() {
   return (
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted' id='contact'>
-            <section className=''>
+            <section className='footer-class'>
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md='3' lg='3' xl='5' className='mx-auto mb-4'>
@@ -14,9 +14,11 @@ export default function Footerp() {
               <p>
                 i’m open to work with companies that thinks i’ll help them with my skills. if you are looking for someone like me, please let me know.
               </p>
+              <div className='footer-button'>
               <a href='mailto:ledadoval2002@gmail.com'>
             <button>contact</button>            
               </a>
+              </div>
             </MDBCol>
           </MDBRow>
           <MDBCol className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
