@@ -43,7 +43,7 @@ export default function Footerp() {
 
       <div className='text-center text-white p-4'>
         Copyright © 2025 -
-        <a className='text-reset fw-bold' href='https://github.com/ledadoval'>
+        <a className='text-reset fw-bold' href='https://github.com/ledadoval' target='_blank'> 
           Lêda do Val
         </a>
       </div>
