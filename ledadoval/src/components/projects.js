@@ -49,9 +49,9 @@ function Projects() {
 
 
   return (
-    <div id='projects'>
+    <div className='projects-content' id='projects'>
 
-      <h2>personal projects</h2>
+      <h2 className='projects-h2'>personal projects</h2>
       <h5>here's a list of some projects that I alredy did during my journey of coding</h5>
 
       <Box sx={{
@@ -59,7 +59,6 @@ function Projects() {
         gap: 3,
         gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
         padding: 4,
-        backgroundColor: "#2e2b2b",
       }}>
         {cardProjects.map((card, index) => (
           <Card key={index} sx={{
@@ -67,7 +66,6 @@ function Projects() {
             flexDirection: "row",
             alignItems: "flex-start",
             p: 2,
-            backgroundColor: "#2e2b2b", // Fundo do card
             color: "#fff",
             borderRadius: 2,
             boxShadow: "none",
@@ -75,7 +73,7 @@ function Projects() {
             <CardMedia
               component="img"
               sx={{
-                width: 150, height: 150, backgroundColor: "#330000", // Fundo vermelho escuro
+                width: 150, height: 150,
                 borderRadius: 2, mr: 2
               }}
               image={card.image}
@@ -86,7 +84,7 @@ function Projects() {
                 <Typography variant="h6"
                   sx={{
                     textTransform: "lowcase",
-                    color: "#b71c1c", // Título em vermelho
+                    color: "#b71c1c", 
                     fontWeight: "bold",
                     mb: 1,
                   }}>
@@ -94,7 +92,7 @@ function Projects() {
                 </Typography>
                 <Typography variant="body2"
                     sx={{
-                      color: "#ccc", // Texto secundário
+                      color: "#ccc", 
                       lineHeight: 1.5,
                     }}>
                   {card.description}

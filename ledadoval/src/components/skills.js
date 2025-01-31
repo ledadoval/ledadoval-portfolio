@@ -5,7 +5,7 @@ import '../App.css';
 function Skills(){
     return(
         <div className='skills-container'>
-        <h2>my skills</h2>
+        <h2 className='skills-h2'>my skills</h2>
         <h5>list of tools that I already use, or study on my projects</h5>
         <div className='skills-buttons'>
         <button onClick={() => window.open('https://developer.mozilla.org/en-US/docs/Glossary/HTML5')}>html</button>

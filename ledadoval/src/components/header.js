@@ -14,7 +14,7 @@ function HeaderP() {
     <div className='headerNav'>
 
       {['sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+        <Navbar key={expand} expand={expand} className="mb-3">
           <Container fluid>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas

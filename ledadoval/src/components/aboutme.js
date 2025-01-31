@@ -4,7 +4,7 @@ import ledaimgae from '../assets/leda-do-val-ai.png';
 
 function AboutMe() {
     return (
-        <div id='aboutme'>
+        <div className='aboutme-class' id='aboutme'>
             <img src={ledaimgae} />
             <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum lorem ipsum </p>
         </div>
