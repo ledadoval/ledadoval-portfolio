@@ -8,9 +8,9 @@ export default function Footerp() {
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md='3' lg='3' xl='5' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
+              <h2 className='fw-light mb-4'>
                 <MDBIcon color='secondary' icon='gem' className='me-3' />
-                contact me</h6>
+                contact me</h2>
               <p>
                 i’m open to work with companies that thinks i’ll help them with my skills. if you are looking for someone like me, please let me know.
               </p>
