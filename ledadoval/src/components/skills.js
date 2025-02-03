@@ -13,11 +13,13 @@ function Skills(){
         <button onClick={() => window.open('https://react.dev/')}>react</button>
         <button onClick={() => window.open('https://reactnative.dev/')}>react native</button>
         <button onClick={() => window.open('https://nodejs.org/pt')}>node js</button>
-        <button onClick={() => window.open('https://dev.java/')}>java</button>
         <button onClick={() => window.open('https://learn.microsoft.com/en-us/dotnet/csharp/')}>c#</button>
         <button onClick={() => window.open('https://dev.mysql.com/doc/')}>mysql</button>
         <button onClick={() => window.open('https://help.figma.com/hc/en-us')}>figma</button>
         <button onClick={() => window.open('https://git-scm.com/doc')}>git</button>
+        <button onClick={() => window.open('https://dev.java/')}>java</button>
+        <button onClick={() => window.open('https://learn.microsoft.com/en-us/power-bi/')}>power bi</button>
+        <button onClick={() => window.open('https://www.python.org/doc/')}>python</button>
         </div>
         </div>
 

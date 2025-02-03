@@ -63,7 +63,7 @@
 }
 
 .nav-link:hover {
-  color: #ac212167 !important;
+  color: #b22222 !important;
 }
 
 #intro {
@@ -266,4 +266,25 @@
   display: grid;
   grid-template-columns: 4fr 2fr;
   gap: 5px;
+}
+
+.changes-color:hover {
+  color: #b22222;
+  transform: scale(1.05);
+}
+
+.changes-color{
+  padding: 10px 0px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 1s ease, background-color 0.2s ease;
+}
+
+.footer-hover{
+  color: #fff;
+  padding: 5px;
+}
+
+.footer-hover:hover{
+  color: #b22222;
 }

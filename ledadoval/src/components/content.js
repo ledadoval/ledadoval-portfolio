@@ -8,7 +8,13 @@ function Content(){
             <h1>Lêda do Val</h1>
             <p>front-end developer learning about data science</p>
             <div className='button-content'> 
-            <button onClick={AboutMe}>about me</button> <button>contact</button>
+                <a href='#aboutme'>
+
+            <button onClick={AboutMe}>about me</button> 
+                </a>
+            <a href='mailto:ledadoval2002@gmail.com'>
+            <button>contact</button>
+            </a>
             </div>
         </div>
     );
