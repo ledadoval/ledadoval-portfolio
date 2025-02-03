@@ -1,5 +1,4 @@
 import React from 'react';
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import ledaimgae from '../assets/leda-do-val-ai.png';
 
 function AboutMe() {

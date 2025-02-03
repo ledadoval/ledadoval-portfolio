@@ -27,9 +27,9 @@ function Projects() {
       color: "blue-500",
     },
     {
-      title: "loading...",
-      description: "waiting",
-      repolink: null,
+      title: "atorf",
+      description: "projeto de poo feito utilizando java para o gerenciamento de frotas de veiculos",
+      repolink: "",
       color: "gray-500",
     },
     {
@@ -41,7 +41,7 @@ function Projects() {
   ];
 
   return (
-    <div className="projects-content">
+    <div className="projects-content" id='projects'>
       <h2>projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
