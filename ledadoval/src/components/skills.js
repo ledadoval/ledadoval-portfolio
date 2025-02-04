@@ -3,7 +3,7 @@ import '../App.css';
 
 function Skills(){
     return(
-        <div className='skills-container'>
+        <div className='skills-container' id='skills'>
         <h2 className='skills-h2'>my skills</h2>
         <h5>list of tools that I already use, or study on my projects</h5>
         <div className='skills-buttons'>

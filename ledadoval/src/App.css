@@ -97,7 +97,7 @@
   margin: 20px 0;
 }
 
-#intro button {
+#intro button, #aboutme button{
   padding: 10px 20px;
   margin: 10px;
   border: none;
@@ -109,8 +109,18 @@
   cursor: pointer;
 }
 
+#aboutme button, #aboutme a{
+  margin-top: 10px;
+  margin-left: 220px;
+}
+
 #intro button:hover {
   background-color: #ff4040;
+}
+
+#aboutme button:hover{
+  background-color: #e63946;
+  border-radius: 20px;
 }
 
 .aboutme-class {
@@ -121,7 +131,6 @@
   text-align: center;
   margin: 50px 50px;
   gap: 50px;
-
 }
 
 #aboutme h2 {
@@ -163,7 +172,15 @@
   text-align: left;
 }
 
-.skills-container h5 {
+#skills h2::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #b22222;
+}
+
+#skills h5 {
   font-size: 16px;
   margin-bottom: 20px;
   color: #b3b3b3;
@@ -193,20 +210,21 @@
 
 .skills-container button:hover,
 .content-div button:hover,
-.footer-class button:hover {
+.footer-class button:hover, #aboutme button:hover {
   background-color: #b22222;
   transform: scale(1.05);
 }
 
 .skills-container button:focus,
 .content-div button:focus,
-.footer-class button:focus {
+.footer-class button:focus, #aboutme button:focus{
   outline: none;
   box-shadow: 0 0 10px #b22222;
 }
 .projects-content{
   padding: 40px;
 }
+
 
 .projects-content h5 {
   font-size: 16px;
@@ -220,9 +238,16 @@
 }
 
 .projects-content h2 {
-  text-align: center;
   font-size: 1.875rem;
   margin-bottom: 1.5rem;
+}
+
+#projects h2::after{
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #b22222;
 }
 
 .projects-grid {
@@ -269,6 +294,14 @@
   display: grid;
   grid-template-columns: 4fr 2fr;
   gap: 5px;
+}
+
+#contact h2::after{
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #b22222;
 }
 
 .changes-color:hover {
