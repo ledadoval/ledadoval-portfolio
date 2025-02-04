@@ -42,6 +42,8 @@
 * {
   font-family: 'Montserant', sans-serif;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   background-color: #2e2b2b;
   color: #fff;
 }
@@ -125,36 +127,48 @@
 
 .aboutme-class {
   display: flex;
-  align-items: center;
-  justify-content: baseline;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: row;
-  text-align: center;
-  margin: 50px 50px;
-  gap: 50px;
-}
-
-#aboutme h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #fff;
+  gap: 30px;
+  padding: 20px;
 }
 
 #aboutme img {
-  width: 300px;
-  height: 300px;
-  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
   border-radius: 5px;
-  position: initial;
-  flex-shrink: 0;
   box-shadow: 15px 15px 10px #ac212167;
 }
 
 #aboutme p {
-  max-width: 600px;
   font-size: 16px;
   line-height: 1.6;
   color: #c9c9c9;
+  max-width: 600px;
   text-align: left;
+}
+
+#aboutme button {
+  margin: 10px auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .aboutme-class {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #aboutme p {
+    text-align: center;
+  }
+
+  #aboutme button {
+    margin-top: 20px;
+  }
 }
 
 .skills-container {
@@ -164,7 +178,6 @@
   color: #fff;
 }
 
-
 .skills-container h2 {
   font-size: 28px;
   margin-bottom: 10px;
@@ -172,12 +185,12 @@
   text-align: left;
 }
 
-#skills h2::after{
-    content: '';
-    display: block;
-    width: 50px;
-    height: 2px;
-    background-color: #b22222;
+#skills h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #b22222;
 }
 
 #skills h5 {
@@ -187,12 +200,15 @@
   text-align: left;
 }
 
+.skills-buttons{
+  grid-template-columns: repeat(7, 1fr);
+}
+
 .skills-container .skills-buttons {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
- flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .skills-container button,
@@ -210,21 +226,46 @@
 
 .skills-container button:hover,
 .content-div button:hover,
-.footer-class button:hover, #aboutme button:hover {
+.footer-class button:hover,
+#aboutme button:hover {
   background-color: #b22222;
   transform: scale(1.05);
 }
 
 .skills-container button:focus,
 .content-div button:focus,
-.footer-class button:focus, #aboutme button:focus{
+.footer-class button:focus,
+#aboutme button:focus {
   outline: none;
   box-shadow: 0 0 10px #b22222;
 }
+
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 20px;
+  }
+
+  .skills-container h2 {
+    font-size: 24px;
+  }
+
+  .skills-container h5 {
+    font-size: 14px;
+  }
+
+  .skills-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-container button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
 .projects-content{
   padding: 40px;
 }
-
 
 .projects-content h5 {
   font-size: 16px;
@@ -254,6 +295,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
 }
 
 .project-card {
