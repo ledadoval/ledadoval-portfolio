@@ -4,39 +4,45 @@ function Projects() {
   const projects = [
     {
       title: "communibus",
-      description: "sistema web desenvolvido no 3º período do curso de análise e desenvolvimento de sistemas, onde ajuda o usuário a saber o horário do ônibus mais próximos a partir da sua geolocalização.",
+      description: "a web system developed in the 3rd semester of the Systems Analysis and Development course, helping users find the nearest bus schedules based on their geolocation.",
       repolink: "https://github.com/ICEI-PUC-Minas-PSG-ADS-TI/TIAPLI-2023-2-CommuniBus",
-      color: "red-500",
+      color: " #4b0101",
     },
     {
       title: "locaveiculos",
-      description: "api desenvolvida em c# durante o 4º período do curso de análise e desenvolvimento de sistemas",
+      description: "an API developed in C# during the 4th semester of the Systems Analysis and Development course.",
       repolink: "https://github.com/PSG-TADS/psg-tads-2024-1-back-bd-ledadoval",
-      color: "blue-500",
+      color: " #4b0101",
     },
     {
       title: "plantbuddy",
-      description: "projeto elaborada para um usuário saiba todas as informações sobre o plantio das plantas durante o 5ª período de análise e desenvolviment de sistemas",
+      description: "a project developed in React Native to provide users with all the necessary information about plant cultivation, developed in the 5th semester of the Systems Analysis and Development course.",
       repolink: "#",
-      color: "green-500",
+      color: " #4b0101",
     },
     {
       title: "lrburguer",
-      description: "landing page feita utilizando html, css e javascript",
+      description: "a landing page built using HTML, CSS, and JavaScript.",
       repolink: "#",
-      color: "blue-500",
+      color: " #4b0101",
     },
     {
       title: "atorf",
-      description: "projeto de poo feito utilizando java para o gerenciamento de frotas de veiculos",
-      repolink: "",
-      color: "gray-500",
+      description: "an OOP project developed in Java for vehicle fleet management.",
+      repolink: "#",
+      color: " #4b0101",
+    },
+    {
+      title: "excusify",
+      description: "a random excuse generator for missing an appointment.",
+      repolink: null,
+      color: "#6b7280",
     },
     {
       title: "loading...",
       description: "waiting",
       repolink: null,
-      color: "gray-500",
+      color: "#6b7280",
     },
   ];
 
@@ -48,7 +54,9 @@ function Projects() {
           <div
             key={index}
             className="project-card"
-            style={{ borderColor: project.color }}
+            style={{  borderColor: project.color,
+              borderStyle: 'solid',
+              borderWidth: '2px'}}
           >
             <h3 style={{ color: project.color }}>{project.title}</h3>
             <p>{project.description}</p>

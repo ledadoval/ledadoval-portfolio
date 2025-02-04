@@ -121,6 +121,7 @@
   text-align: center;
   margin: 50px 50px;
   gap: 50px;
+
 }
 
 #aboutme h2 {
@@ -133,9 +134,10 @@
   width: 300px;
   height: 300px;
   margin-bottom: 20px;
-  border: 3px solid #b22222;
+  border-radius: 5px;
   position: initial;
   flex-shrink: 0;
+  box-shadow: 15px 15px 10px #ac212167;
 }
 
 #aboutme p {
@@ -169,8 +171,9 @@
 }
 
 .skills-container .skills-buttons {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+ flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
 }
