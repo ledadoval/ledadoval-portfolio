@@ -150,9 +150,10 @@
   text-align: left;
 }
 
-#aboutme button {
+#aboutme button, #aboutme a {
   margin: 10px auto;
   display: block;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -166,8 +167,9 @@
     text-align: center;
   }
 
-  #aboutme button {
+  #aboutme button, #aboutme a {
     margin-top: 20px;
+    text-decoration: none;
   }
 }
 
