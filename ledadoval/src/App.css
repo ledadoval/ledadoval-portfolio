@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #282c34;
 }
 
 .App-logo {
@@ -15,7 +14,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -46,10 +44,6 @@
   box-sizing: border-box;
   background-color: #2e2b2b;
   color: #fff;
-}
-
-.bg-body-tertiary {
-  background-color: #2e2b2b !important;
 }
 
 .bg-body-tertiary {
@@ -130,16 +124,17 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: row;
-  gap: 30px;
-  padding: 20px;
+  gap: 20px;
+  padding: 10px;
 }
 
 #aboutme img {
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   height: auto;
   border-radius: 5px;
   box-shadow: 15px 15px 10px #ac212167;
+  margin-right: 150px;
 }
 
 #aboutme p {
@@ -216,13 +211,14 @@
 .skills-container button,
 .content-div button,
 .footer-class button {
-  background-color: #4b0101;
-  border: 0px solid #4b0101;
+  border: none;
   border-radius: 20px;
-  padding: 10px 15px;
-  font-size: 14px;
+  background-color: #ac212167;
+  border-color: #AC2121;
   color: #fff;
+  font-size: 16px;
   cursor: pointer;
+  padding: 10px 15px;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
@@ -264,6 +260,57 @@
     padding: 8px 12px;
   }
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  padding: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+}
+
+.project-card:hover {
+  transform: scale(1.05);  
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);  
+  background-color: var(--hover-color);  
+}
+
+/*
+.project-card:nth-child(1):hover {
+  --hover-color: #ff5733; 
+}
+.project-card:nth-child(2):hover {
+  --hover-color: #33ff57; 
+}
+.project-card:nth-child(3):hover {
+  --hover-color: #3357ff; 
+}
+.project-card:nth-child(4):hover {
+  --hover-color: #ffd700; 
+}
+.project-card:nth-child(5):hover {
+  --hover-color: #ff33a8; 
+}
+.project-card:nth-child(6):hover {
+  --hover-color: #1abc9c;
+}
+
+*/
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;  
+  }
+}
+
 
 .projects-content{
   padding: 40px;
