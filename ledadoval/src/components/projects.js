@@ -23,7 +23,7 @@ function Projects() {
     {
       title: "lrburguer",
       description: "a landing page built using HTML, CSS, and JavaScript.",
-      repolink: "#",
+      repolink: "https://github.com/ledadoval/lrburguer",
       color: " white",
     },
     {
