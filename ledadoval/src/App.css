@@ -138,7 +138,7 @@
 }
 
 #aboutme p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   color: #c9c9c9;
   max-width: 600px;
@@ -197,9 +197,31 @@
   text-align: left;
 }
 
-.skills-buttons{
-  grid-template-columns: repeat(7, 1fr);
+.skills-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 50px;
+  padding-top: 20px;
 }
+
+.skills-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.skills-buttons button:hover {
+  transform: scale(1.1);
+}
+
+.skills-buttons button svg {
+  display: block;
+}
+
 
 .skills-container .skills-buttons {
   display: grid;
@@ -208,7 +230,6 @@
   margin-top: 10px;
 }
 
-.skills-container button,
 .content-div button,
 .footer-class button {
   border: none;
@@ -222,7 +243,6 @@
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.skills-container button:hover,
 .content-div button:hover,
 .footer-class button:hover,
 #aboutme button:hover {
@@ -230,7 +250,6 @@
   transform: scale(1.05);
 }
 
-.skills-container button:focus,
 .content-div button:focus,
 .footer-class button:focus,
 #aboutme button:focus {
