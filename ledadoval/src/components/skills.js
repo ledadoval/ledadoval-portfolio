@@ -2,61 +2,42 @@ import React from 'react';
 import '../App.css';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaWordpress, FaJava, FaPython } from 'react-icons/fa';
 import { SiMysql, SiCsharp, SiFigma, SiPowerbi } from 'react-icons/si';
-import { SiDotnet } from 'react-icons/si'; // Exemplo de substituição para C#
-import { SiMicrosoftpowerpoint } from 'react-icons/si'; // Caso não encontre Power BI, use algo próximo
+import { SiDotnet } from 'react-icons/si';
 
+function Skills() {
+  const skills = [
+    { icon: <FaHtml5 size={40} />, color: "#e34c26", link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5" },
+    { icon: <FaCss3Alt size={40} />, color: "#1572b6", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    { icon: <FaJs size={40} />, color: "#f7df1e", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { icon: <FaReact size={40} />, color: "#61dafb", link: "https://react.dev/" },
+    { icon: <FaNodeJs size={40} />, color: "#339933", link: "https://nodejs.org/pt" },
+    { icon: <SiDotnet size={40} />, color: "#239120", link: "https://learn.microsoft.com/en-us/dotnet/csharp/" },
+    { icon: <SiMysql size={40} />, color: "#4479a1", link: "https://dev.mysql.com/doc/" },
+    { icon: <SiFigma size={40} />, color: "#f24e1e", link: "https://help.figma.com/hc/en-us" },
+    { icon: <FaWordpress size={40} />, color: "#21759b", link: "https://wordpress.com/" },
+    { icon: <FaGitAlt size={40} />, color: "#f05032", link: "https://git-scm.com/doc" },
+    { icon: <FaJava size={40} />, color: "#007396", link: "https://dev.java/" },
+    { icon: <FaPython size={40} />, color: "#3776ab", link: "https://www.python.org/doc/" },
+  ];
 
-function Skills(){
-    return(
-        <div className='skills-container' id='skills'>
-        <h2 className='skills-h2'>my skills</h2>
-        <h5>list of tools that I already use, or study on my projects</h5>
-        <div className='skills-buttons'>
-        <button onClick={() => window.open('https://developer.mozilla.org/en-US/docs/Glossary/HTML5')}>
-          <FaHtml5 size={32} color="#e34c26" />
-        </button>
-        <button onClick={() => window.open('https://developer.mozilla.org/en-US/docs/Web/CSS')}>
-          <FaCss3Alt size={32} color="#1572b6" />
-        </button>
-        <button onClick={() => window.open('https://developer.mozilla.org/en-US/docs/Web/JavaScript')}>
-          <FaJs size={32} color="#f7df1e" />
-        </button>
-        <button onClick={() => window.open('https://react.dev/')}>
-          <FaReact size={32} color="#61dafb" />
-        </button>
-        <button onClick={() => window.open('https://reactnative.dev/')}>
-          <FaReact size={32} color="#61dafb" />
-        </button>
-        <button onClick={() => window.open('https://nodejs.org/pt')}>
-          <FaNodeJs size={32} color="#339933" />
-        </button>
-        <button onClick={() => window.open('https://learn.microsoft.com/en-us/dotnet/csharp/')}>
-          <SiDotnet size={32} color="#239120" />
-        </button>
-        <button onClick={() => window.open('https://dev.mysql.com/doc/')}>
-          <SiMysql size={32} color="#4479a1" />
-        </button>
-        <button onClick={() => window.open('https://help.figma.com/hc/en-us')}>
-          <SiFigma size={32} color="#f24e1e" />
-        </button>
-        <button onClick={() => window.open('https://wordpress.com/')}>
-          <FaWordpress size={32} color="#21759b" />
-        </button>
-        <button onClick={() => window.open('https://git-scm.com/doc')}>
-          <FaGitAlt size={32} color="#f05032" />
-        </button>
-        <button onClick={() => window.open('https://dev.java/')}>
-          <FaJava size={32} color="#007396" />
-        </button>
-        <button onClick={() => window.open('https://learn.microsoft.com/en-us/power-bi/')}>
-        </button>
-        <button onClick={() => window.open('https://www.python.org/doc/')}>
-          <FaPython size={32} color="#3776ab" />
-        </button>
-        </div>
-        </div>
-
-    );
+  return (
+    <div className="skills-container" id="skills">
+      <h2 className="skills-h2">my skills</h2>
+      <h5>list of tools I use or study for my projects</h5>
+      <div className="skills-grid">
+        {skills.map((skill, index) => (
+          <button
+            key={index}
+            className="skill-button"
+            onClick={() => window.open(skill.link, "_blank")}
+            style={{ borderColor: skill.color }}
+          >
+            <span style={{ color: skill.color }}>{skill.icon}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Skills;

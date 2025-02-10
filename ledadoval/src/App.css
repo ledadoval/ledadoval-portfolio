@@ -167,7 +167,6 @@
     text-decoration: none;
   }
 }
-
 .skills-container {
   text-align: center;
   padding: 40px;
@@ -176,85 +175,55 @@
 }
 
 .skills-container h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 15px;
   color: #fff;
-  text-align: left;
 }
 
-#skills h2::after {
+.skills-container h2::after {
   content: '';
   display: block;
-  width: 50px;
-  height: 2px;
+  width: 60px;
+  height: 3px;
+  margin: 10px auto 0;
   background-color: #b22222;
 }
 
-#skills h5 {
-  font-size: 16px;
-  margin-bottom: 20px;
+.skills-container h5 {
+  font-size: 18px;
   color: #b3b3b3;
-  text-align: left;
+  margin-bottom: 30px;
 }
 
-.skills-buttons {
+.skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 20px;
   justify-content: center;
-  grid-template-columns: repeat(5, 1fr);
-  margin-left: 50px;
-  padding-top: 20px;
 }
 
-.skills-buttons button {
+.skill-button {
   background: none;
-  border: none;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  padding: 15px;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skills-buttons button:hover {
-  transform: scale(1.1);
+.skill-button:hover {
+  transform: scale(1.15);
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
-.skills-buttons button svg {
+.skill-button span {
   display: block;
+  transition: transform 0.3s ease;
 }
 
-
-.skills-container .skills-buttons {
-  display: grid;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.content-div button,
-.footer-class button {
-  border: none;
-  border-radius: 20px;
-  background-color: #ac212167;
-  border-color: #AC2121;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 10px 15px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-}
-
-.content-div button:hover,
-.footer-class button:hover,
-#aboutme button:hover {
-  background-color: #b22222;
-  transform: scale(1.05);
-}
-
-.content-div button:focus,
-.footer-class button:focus,
-#aboutme button:focus {
-  outline: none;
-  box-shadow: 0 0 10px #b22222;
+.skill-button:hover span {
+  transform: rotate(20deg);
 }
 
 @media (max-width: 768px) {
@@ -270,13 +239,8 @@
     font-size: 14px;
   }
 
-  .skills-buttons {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-container button {
-    font-size: 12px;
-    padding: 8px 12px;
+  .skills-grid {
+    gap: 10px;
   }
 }
 
