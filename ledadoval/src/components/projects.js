@@ -27,20 +27,14 @@ function Projects() {
       color: " white",
     },
     {
-      title: "atorf",
-      description: "an OOP project developed in Java for vehicle fleet management.",
-      repolink: "#",
+      title: "universidadeaeds",
+      description: "a university sistem developed in java",
+      repolink: "https://github.com/pablo-lorran/UniversidadeStarAED",
       color: " white",
     },
     {
       title: "excusify",
       description: "a random excuse generator for missing an appointment.",
-      repolink: null,
-      color: "#6b7280",
-    },
-    {
-      title: "loading...",
-      description: "waiting",
       repolink: null,
       color: "#6b7280",
     },
