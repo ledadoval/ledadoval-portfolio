@@ -1,6 +1,6 @@
-# Personal Portfolio - Frontend Developer
+# Personal Portfolio - Front-end Developer
 
-Welcome to my personal portfolio! This project showcases my skills, experiences, and the projects I have worked on as a Frontend Developer. It serves as a platform to demonstrate my technical expertise and creative approach to web development.
+Welcome to my personal portfolio! This project showcases my skills, experiences, and the projects I have worked on as a Front-end Developer. It serves as a platform to demonstrate my technical expertise and creative approach to web development.
 
 ## Features
 
@@ -43,4 +43,4 @@ This portfolio is built using the following technologies:
 
 ### Option 2: Live Preview on Vercel:
 
-1. Visit the live demo of this project hosted on Vercel: https://lrburguer.vercel.app/
+1. Visit the live demo of this project hosted on Vercel: https://ledadoval.vercel.app/

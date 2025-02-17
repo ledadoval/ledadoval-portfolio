@@ -9,12 +9,6 @@ import Projects from './components/projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-function MyApp() {
-  return (
-   <button>i1m a button</button>
-  );
-}
-
 export default function App(){
   return(
     <div>

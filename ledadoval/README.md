@@ -22,4 +22,4 @@
 
 ### Option 2: Live Preview on Vercel:
 
-1. Visit the live demo of this project hosted on Vercel: https://lrburguer.vercel.app/
+1. Visit the live demo of this project hosted on Vercel: https://ledadoval.vercel.app/

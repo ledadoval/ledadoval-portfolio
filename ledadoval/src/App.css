@@ -93,7 +93,7 @@
   margin: 20px 0;
 }
 
-#intro button, #aboutme button{
+#intro button, #aboutme button, #contact button{
   padding: 10px 20px;
   margin: 10px;
   border: none;
@@ -110,7 +110,11 @@
   margin-left: 220px;
 }
 
-#intro button:hover {
+#contact button{
+  margin-left: 0;
+}
+
+#intro button:hover, #contact button:hover {
   background-color: #ff4040;
 }
 
