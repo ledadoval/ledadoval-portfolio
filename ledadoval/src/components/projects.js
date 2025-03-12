@@ -33,8 +33,8 @@ function Projects() {
       color: " white",
     },
     {
-      title: "excusify",
-      description: "a random excuse generator for missing an appointment.",
+      title: "advice generator",
+      description: "a random advice generator for you.",
       repolink: null,
       color: "#6b7280",
     },
