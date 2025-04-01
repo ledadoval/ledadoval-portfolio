@@ -1,4 +1,4 @@
-# Personal Portfolio - Front-end Developer
+# Personal Portfolio
 
 Welcome to my personal portfolio! This project showcases my skills, experiences, and the projects I have worked on as a developer. With a background in Systems Analysis and Development and currently pursuing a bachelor's degree in Information Systems, I have a strong foundation in software development. My expertise lies in frontend development, SEO strategies, and, more recently, data science and machine learning. This portfolio serves as a platform to demonstrate my technical knowledge, creativity, and passion for building impactful digital solutions.
 
