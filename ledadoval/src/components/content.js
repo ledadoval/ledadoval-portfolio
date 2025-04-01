@@ -6,7 +6,7 @@ function Content(){
         <div className='content-div' id='intro'>
             <h5>hi, I'm</h5>
             <h1>Lêda do Val</h1>
-            <p>front-end developer learning about data science</p>
+            <p>a developer learning about data science</p>
             <div className='button-content'> 
                 <a href='#aboutme'>
 

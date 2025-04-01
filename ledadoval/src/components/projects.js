@@ -33,8 +33,8 @@ function Projects() {
       color: " white",
     },
     {
-      title: "advice generator",
-      description: "a random advice generator for you.",
+      title: "guest list",
+      description: "a guest list developed with html, css, and javascript",
       repolink: null,
       color: "#6b7280",
     },
